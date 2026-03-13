@@ -470,9 +470,8 @@ document.querySelectorAll('.faq__question').forEach(btn => {
   });
 });
 
-// Contact form — uses Formspree for reliable email delivery to info@ksa.ee
-// Replace FORMSPREE_ID with your Formspree form ID, or use mailto fallback
-const API_URL = '/api/submit';
+// Contact form — submits directly to Web3Forms (client-side) for email delivery to info@ksa.ee
+const WEB3FORMS_KEY = '009b5e13-59a7-45ce-b0b5-00817fdc024b';
 
 document.getElementById('contactForm').addEventListener('submit', async function(e) {
   e.preventDefault();
@@ -501,27 +500,43 @@ document.getElementById('contactForm').addEventListener('submit', async function
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending...';
 
-  const formData = {
-    name: name,
-    age: age,
-    email: email,
-    phone: phone,
-    diopter: diopter || '',
-    lang: 'en'
-  };
+  const messageBody = [
+    'Flow3 Eye Examination Enquiry from landing page',
+    '',
+    'Name: ' + name,
+    'Age: ' + age,
+    'Email: ' + email,
+    'Phone: ' + phone,
+    'Diopters: ' + (diopter || 'Not specified'),
+    'Language: EN',
+    '',
+    'Submitted: ' + new Date().toISOString()
+  ].join('\n');
 
   try {
-    const res = await fetch(API_URL, {
+    const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(formData)
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: 'Flow3 Eye Examination Enquiry — ' + name,
+        from_name: name,
+        replyto: email,
+        name: name,
+        age: age,
+        email: email,
+        phone: phone,
+        diopter: diopter || 'Not specified',
+        message: messageBody
+      })
     });
 
-    if (res.ok) {
+    const data = await res.json();
+    if (data.success) {
       form.style.display = 'none';
       document.getElementById('formSuccess').classList.add('active');
     } else {
-      throw new Error('Server error');
+      throw new Error(data.message || 'Submission failed');
     }
   } catch(err) {
     // Fallback to mailto
