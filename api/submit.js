@@ -1,8 +1,6 @@
-// Vercel serverless function — receives form data, sends email to info@ksa.ee
-// Uses Web3Forms API (free) — requires FORM_API_KEY env variable
-// Or falls back to Formspree if FORMSPREE_ID env variable is set
+// Vercel serverless function — receives form data, sends email to info@ksa.ee via Web3Forms
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -46,64 +44,39 @@ export default async function handler(req, res) {
       `Submitted: ${new Date().toISOString()}`
     ].join('\n');
 
-    // Try Web3Forms first (if API key configured)
     const apiKey = process.env.FORM_API_KEY;
-    if (apiKey) {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({
-          access_key: apiKey,
-          subject: `${labels.subject} — ${name}`,
-          from_name: name,
-          replyto: email,
-          name: name,
-          age: age,
-          email: email,
-          phone: phone,
-          diopter: diopter || 'N/A',
-          message: messageBody,
-        }),
-      });
-
-      const data = await response.json();
-      if (data.success) {
-        return res.status(200).json({ success: true, message: 'Form submitted successfully' });
-      }
+    if (!apiKey) {
+      return res.status(500).json({ error: 'FORM_API_KEY not configured' });
     }
 
-    // Try Formspree (if form ID configured)
-    const formspreeId = process.env.FORMSPREE_ID;
-    if (formspreeId) {
-      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({
-          _subject: `${labels.subject} — ${name}`,
-          _replyto: email,
-          name,
-          age,
-          email,
-          phone,
-          diopter: diopter || 'N/A',
-          message: messageBody,
-        }),
-      });
-
-      if (response.ok) {
-        return res.status(200).json({ success: true, message: 'Form submitted successfully' });
-      }
-    }
-
-    // If no API keys configured, return instructions
-    return res.status(200).json({ 
-      success: true, 
-      message: 'Form received (configure FORM_API_KEY or FORMSPREE_ID env vars for email delivery)',
-      data: { name, age, email, phone, diopter, lang }
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: apiKey,
+        subject: `${labels.subject} — ${name}`,
+        from_name: name,
+        replyto: email,
+        name: name,
+        age: age,
+        email: email,
+        phone: phone,
+        diopter: diopter || 'N/A',
+        message: messageBody,
+      }),
     });
 
+    const data = await response.json();
+    
+    if (data.success) {
+      return res.status(200).json({ success: true, message: 'Form submitted successfully' });
+    } else {
+      console.error('Web3Forms error:', JSON.stringify(data));
+      return res.status(500).json({ error: 'Form submission failed', details: data });
+    }
+
   } catch (error) {
-    console.error('Form submission error:', error);
-    return res.status(500).json({ error: 'Internal server error' });
+    console.error('Form submission error:', error.message || error);
+    return res.status(500).json({ error: 'Internal server error', details: error.message });
   }
-}
+};
