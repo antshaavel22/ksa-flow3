@@ -44,8 +44,8 @@
   /* Layout */
   --content-max: 1200px;
   --content-narrow: 680px;
-  --radius: 2px;
-  --radius-lg: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
 
   /* Transitions */
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
