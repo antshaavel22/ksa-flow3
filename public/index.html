@@ -1,576 +1,643 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-<!--
-   ______                            __
-  / ____/___  ____ ___  ____  __  __/ /____  _____
- / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
-\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
-                    /_/
-        Created with Perplexity Computer
-        https://www.perplexity.ai/computer
--->
-
-<!-- Perplexity Computer Attribution — SEO Meta Tags -->
-<meta name="generator" content="Perplexity Computer">
-<meta name="author" content="Perplexity Computer">
-<meta property="og:see_also" content="https://www.perplexity.ai/computer">
-<link rel="author" href="https://www.perplexity.ai/computer">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flow3 silmauuring — KSA Silmakeskus</title>
-<meta name="description" content="Broneeri Flow3 silmauuring ja tee esimene samm prillivaba elu suunas. KSA Silmakeskus — Eesti juhtiv laserkirurgia keskus, 55 000+ protseduuri.">
-<meta property="og:title" content="Flow3 silmauuring — KSA Silmakeskus">
-<meta property="og:description" content="Broneeri Flow3 silmauuring. Lõikevaba laserprotseduur, mis on aidanud üle 35 000 inimese vabaneda prillidest.">
-<meta property="og:type" content="website">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./base.css">
-<link rel="stylesheet" href="./style.css">
-<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSA Silmakeskus — Flow3 laserprotseduur</title>
+  <meta name="description" content="Flow3 — ainus täielikult lõikevaba laserprotseduur Eestis. 55 000+ protseduuri, 0 ektaasia juhtumit, kuni 7 aasta garantii.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="https://ksa.ee" target="_blank" rel="noopener noreferrer" class="header__logo" aria-label="KSA Silmakeskus">
-      <svg viewBox="0 0 120 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <text x="0" y="36" font-family="Geist, sans-serif" font-weight="500" font-size="38" fill="#87be23" letter-spacing="-2">ksa</text>
-      </svg>
-    </a>
-    <nav class="header__nav" id="mainNav">
-      <a href="#eelised">Eelised</a>
-      <a href="#uuring">Uuring</a>
-      <a href="#meeskond">Meeskond</a>
-      <a href="#korduma">KKK</a>
-      <div class="lang-switch">
-        <a href="./index.html" class="active">ET</a>
-        <a href="./ru.html">RU</a>
-        <a href="./en.html">EN</a>
-      </div>
-      <a href="#broneeri" class="header__cta">Broneeri aeg</a>
-    </nav>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menüü">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+  <!-- ════════ HEADER ════════ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="./index.html" class="logo" aria-label="KSA Silmakeskus">
+        <span class="logo__main">ksa</span>
+        <span class="logo__sub">Silmakeskus</span>
+      </a>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="container">
-    <div class="hero__grid">
+      <div class="header__right">
+        <nav class="nav" aria-label="Peamine navigatsioon">
+          <a href="#eelised" class="nav__link">Eelised</a>
+          <a href="#meeskond" class="nav__link">Meeskond</a>
+          <a href="#hinnakiri" class="nav__link">Hinnakiri</a>
+          <a href="#kkk" class="nav__link">KKK</a>
+        </nav>
+
+        <div class="lang-switch">
+          <a href="./index.html" class="active">ET</a>
+          <a href="./ru.html">RU</a>
+          <a href="./en.html">EN</a>
+        </div>
+
+        <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary btn--sm">Broneeri aeg</a>
+
+        <button class="hamburger" aria-label="Ava menüü" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#eelised" class="mobile-nav__link">Eelised</a>
+    <a href="#meeskond" class="mobile-nav__link">Meeskond</a>
+    <a href="#hinnakiri" class="mobile-nav__link">Hinnakiri</a>
+    <a href="#kkk" class="mobile-nav__link">KKK</a>
+    <div class="lang-switch">
+      <a href="./index.html" class="active">ET</a>
+      <a href="./ru.html">RU</a>
+      <a href="./en.html">EN</a>
+    </div>
+    <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary">Broneeri aeg</a>
+  </div>
+
+
+  <!-- ════════ HERO ════════ -->
+  <section class="hero">
+    <div class="hero__inner">
       <div class="hero__content">
-        <div class="hero__badge">Eesti juhtiv laserkirurgia keskus</div>
-        <h1 class="hero__title">Selge nägemine algab ühest uuringust</h1>
-        <p class="hero__subtitle">Flow3 silmauuring annab täieliku ülevaate silmade tervisest ning selguse, kas lõikevaba laserprotseduur on õige valik. 60-minutiline uuring. Tuhandeid mõõdetud parameetreid. Selge vastus.</p>
-        <div class="hero__actions">
-          <a href="#broneeri" class="btn btn--primary">Broneeri uuring — 69 €*</a>
+        <span class="hero__badge reveal">Eesti juhtiv silmakirurgia keskus</span>
+        <h1 class="hero__title reveal">Näe maailma
+ilma prillideta.</h1>
+        <p class="hero__subtitle reveal">Flow3 — ainus täielikult lõikevaba laserprotseduur Eestis. 55 000+ protseduuri. 0 ektaasia juhtumit. Kuni 7 aasta garantii.</p>
+        <div class="hero__actions reveal">
+          <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary">Broneeri uuring — 69 €</a>
           <a href="#eelised" class="btn btn--outline">Miks Flow3?</a>
         </div>
       </div>
-      <div class="hero__image">
-        <img src="./assets/procedure.jpg" alt="Flow3 laserprotseduur KSA Silmakeskuses" loading="eager" width="800" height="600">
+      <div class="hero__image reveal">
+        <img src="https://ksa.ee/wp-content/uploads/2025/08/jake_farra_0074_bra.jpg" alt="KSA operatsiooniruum — SCHWIND laserseade" width="600" height="450" loading="eager">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== STATS ===== -->
-<section class="stats">
-  <div class="container">
-    <div class="stats__grid">
-      <div class="reveal">
-        <div class="stats__number">55 000+</div>
-        <div class="stats__label">Laserprotseduuri</div>
+
+  <!-- ════════ STATS BANNER ════════ -->
+  <section class="stats">
+    <div class="stats__inner reveal">
+      <div class="stat">
+        <div class="stat__number">55 000+</div>
+        <div class="stat__label">laserprotseduuri</div>
       </div>
-      <div class="reveal">
-        <div class="stats__number">300 000+</div>
-        <div class="stats__label">Silmauuringut</div>
+      <div class="stat">
+        <div class="stat__number">300 000+</div>
+        <div class="stat__label">silmauuringut</div>
       </div>
-      <div class="reveal">
-        <div class="stats__number">7 aastat</div>
-        <div class="stats__label">Garantii</div>
+      <div class="stat">
+        <div class="stat__number">7 aastat</div>
+        <div class="stat__label">garantii</div>
       </div>
-      <div class="reveal">
-        <div class="stats__number">0</div>
-        <div class="stats__label">Ektaasia juhtumit</div>
+      <div class="stat">
+        <div class="stat__number">0</div>
+        <div class="stat__label">ektaasia juhtumit</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== BENEFITS ===== -->
-<section class="benefits" id="eelised">
-  <div class="container">
-    <div class="section__label">Miks Flow3</div>
-    <h2 class="section__title">Ainus täielikult lõikevaba laserprotseduur Eestis</h2>
-    <p class="section__subtitle">Erinevalt traditsioonilistest LASIK- ja FemtoLasik-protseduuridest ei tee Flow3 sarvkestas lõiget. Laser lihvib vaid sarvkesta pindmist kihti, mis tähendab vähem riske ja kiiremat paranemist.</p>
 
-    <div class="benefits__grid">
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+  <!-- ════════ BENEFITS ════════ -->
+  <section class="section" id="eelised">
+    <div class="section__inner">
+      <span class="section__label reveal">Miks Flow3</span>
+      <h2 class="section__title reveal">Ainus täielikult lõikevaba laserprotseduur Eestis</h2>
+      <p class="section__subtitle reveal">Flow3 SmartSurface kasutab patenditud energiaoptimeeritud tehnoloogiat — puutevaba, lõikevaba, turvaline.</p>
+
+      <div class="benefits__grid">
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="14"/><path d="M20 12v8l5.5 3"/></svg>
+          <h3 class="benefit-card__title">Täielikult puutevaba</h3>
+          <p class="benefit-card__text">Laser ei puutu sinu silma. Kogu protseduur on kontaktivaba.</p>
         </div>
-        <h3 class="benefit-card__title">Täielikult puutevaba</h3>
-        <p class="benefit-card__text">Protseduur toimub ilma skalpelli ja mehaanilise kontaktita. Laser töötab ainult sarvkesta pinnal — valutu ja turvaline.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28l6-10 5 6 4-8 9 12"/><rect x="6" y="8" width="28" height="24" rx="2"/></svg>
+          <h3 class="benefit-card__title">25–50% vähem energiat</h3>
+          <p class="benefit-card__text">Patenditud SCHWIND tehnoloogia kasutab oluliselt vähem energiat kui konkurendid.</p>
         </div>
-        <h3 class="benefit-card__title">Kiire protseduur</h3>
-        <p class="benefit-card__text">Kogu protseduur kestab vaid paar minutit. Liikuda saab kohe pärast protseduuri, täielik nägemisteravus taastub 2–3 kuuga.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6v4m0 20v4m-14-14h4m20 0h4"/><circle cx="20" cy="20" r="8"/><path d="M14.34 14.34l2.83 2.83m5.66 5.66l2.83 2.83m0-11.32l-2.83 2.83m-5.66 5.66l-2.83 2.83"/></svg>
+          <h3 class="benefit-card__title">Kiire taastumine</h3>
+          <p class="benefit-card__text">Tagasi jõusaali ja basseini juba 7 päevaga. Elumuutev kiirus.</p>
         </div>
-        <h3 class="benefit-card__title">Parem öine nägemine</h3>
-        <p class="benefit-card__text">Flow3 säilitab sarvkesta biomehaanika paremini kui lõikepõhised meetodid, mis tähendab stabiilsemat nägemist hämarates tingimustes.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6C10 6 4 20 4 20s6 14 16 14 16-14 16-14S30 6 20 6z"/><circle cx="20" cy="20" r="6"/></svg>
+          <h3 class="benefit-card__title">Parem öine nägemine</h3>
+          <p class="benefit-card__text">Säilitab sarvkesta tugevuse — vähem häireid pimedas.</p>
         </div>
-        <h3 class="benefit-card__title">Hilisem lugemisprilide vajadus</h3>
-        <p class="benefit-card__text">Kliinilised uuringud näitavad, et puutevaba meetod säilitab lähedalt nägemise kauem — lugemisprilid lähevad vaja keskmiselt 5 aastat hiljem.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M28 14l-12 12-6-6"/><rect x="6" y="6" width="28" height="28" rx="4"/></svg>
+          <h3 class="benefit-card__title">Kuni 7 aasta garantii</h3>
+          <p class="benefit-card__text">Pikim garantii Baltikumis. Sinu kindlustunne on meie prioriteet.</p>
         </div>
-        <h3 class="benefit-card__title">Personaalne raviplaan</h3>
-        <p class="benefit-card__text">Iga patsiendi silmad on erinevad. Protseduurile eelnev 60-minutiline uuring mõõdab tuhandeid parameetreid, mille põhjal koostatakse individuaalne raviplaan.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8l3 6h7l-5.5 4.5 2 7L20 21l-6.5 4.5 2-7L10 14h7z"/></svg>
+          <h3 class="benefit-card__title">0 ektaasia juhtumit</h3>
+          <p class="benefit-card__text">55 000+ protseduuri ja null tõsist komplikatsiooni. Absoluutne ohutus.</p>
         </div>
-        <h3 class="benefit-card__title">Vähem energiat, parem tulemus</h3>
-        <p class="benefit-card__text">Flow3 kasutab 25–50% vähem laserenergiat kui konkureerivad meetodid. Vähem energiat tähendab vähem kudet, kiiremat paranemist ja paremat tulemust.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== PROCESS / HOW IT WORKS ===== -->
-<section class="process" id="uuring">
-  <div class="container">
-    <div class="process__grid">
-      <div class="process__image reveal">
-        <img src="./assets/clinic.jpg" alt="KSA Silmakeskuse diagnostikakabinet" loading="lazy" width="800" height="600">
-      </div>
-      <div>
-        <div class="section__label">Flow3 silmauuring</div>
-        <h2 class="section__title">Mis uuringul toimub?</h2>
-        <p class="section__subtitle">60-minutiline uuring annab täieliku pildi silmade tervisest. Optometrist ja silmaarst dokumenteerivad tuhandeid parameetreid ning annavad selge vastuse, kas laserprotseduur sobib.</p>
 
+  <!-- ════════ PROCESS ════════ -->
+  <section class="section section--surface" id="uuring">
+    <div class="section__inner">
+      <span class="section__label reveal">Flow3 silmauuring</span>
+      <h2 class="section__title reveal">Mis uuringul toimub?</h2>
+      <p class="section__subtitle reveal">75-minutiline põhjalik uuring, mis näitab täpselt, kas Flow3 sobib sulle.</p>
+
+      <div class="process__grid">
+        <div class="process__image reveal">
+          <img src="https://ksa.ee/wp-content/uploads/2025/08/flow3silmauuring-e1771594938162.jpg" alt="KSA silmauuringu ruum" width="600" height="450" loading="lazy">
+        </div>
         <div class="process__steps">
           <div class="step reveal">
-            <div class="step__number">01</div>
-            <div>
+            <div class="step__number">1</div>
+            <div class="step__content">
               <h3 class="step__title">Sarvkesta diagnostika</h3>
-              <p class="step__text">Topograafia, tomograafia, paksuse mõõtmine, pupilli suurus, pisarakile analüüs ning kümned muud mõõtmised.</p>
+              <p class="step__text">SCHWIND Sirius+ topograaf kaardistab sinu sarvkesta kuju ja paksuse mikronite täpsusega.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step__number">02</div>
-            <div>
+            <div class="step__number">2</div>
+            <div class="step__content">
               <h3 class="step__title">Võrkkesta ja silmapõhja uuringud</h3>
-              <p class="step__text">Närviuuringud, nägemisteravuse testid, vaatevälja hindamine ja silmapõhja fotografeerimine.</p>
+              <p class="step__text">Kontrollime silma tervist terviklikult — ka neid osi, mida ise ei tunne.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step__number">03</div>
-            <div>
-              <h3 class="step__title">Arsti konsultatsioon ja raviplaan</h3>
-              <p class="step__text">Silmaarst analüüsib uuringutulemusi, selgitab võimalusi ning koostab vajadusel individuaalse raviplaani.</p>
+            <div class="step__number">3</div>
+            <div class="step__content">
+              <h3 class="step__title">Arsti konsultatsioon</h3>
+              <p class="step__text">Silmakirurg selgitab tulemused ja koostab personaalse raviplaani.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== TEAM ===== -->
-<section class="team" id="meeskond">
-  <div class="container">
-    <div class="team__grid">
-      <div class="team__image reveal">
-        <img src="./assets/team.jpg" alt="KSA Silmakeskuse meeskond: Dr. Karl-Erik Tillmann, op.õde Ave Treier ja Dr. Ants Haavel" loading="lazy" width="1200" height="800">
-      </div>
-      <div>
-        <div class="section__label">Meeskond</div>
-        <h2 class="section__title">20 aastase kogemusega professionaalid</h2>
-        <p class="section__subtitle" style="margin-bottom: var(--space-8);">KSA Silmakeskuse meeskond on teostanud üle 55 000 laserprotseduuri ilma ühegi ektaasia juhtumita. See on ohutuse tase, mis räägib iseenda eest.</p>
 
-        <div style="display:flex;flex-direction:column;gap:var(--space-6);">
-          <div class="reveal">
-            <p class="benefit-card__title">Dr. Ants Haavel</p>
-            <p class="benefit-card__text">Tegevjuht ja silmakirurg. Enam kui 20-aastase kogemusega laserkirurgia spetsialist.</p>
+  <!-- ════════ TEAM ════════ -->
+  <section class="section" id="meeskond">
+    <div class="section__inner">
+      <span class="section__label reveal">Meeskond</span>
+      <h2 class="section__title reveal">20+ aastat kogemust. Sinu silmad parimate kätes.</h2>
+      <p class="section__subtitle reveal">26 meie 27-st töötajast valisid ise Flow3.</p>
+
+      <div class="team__grid">
+        <div class="team-card reveal">
+          <div class="team-card__image">
+            <img src="https://ksa.ee/wp-content/uploads/2025/07/drhaavel.jpg" alt="Dr. Ants Haavel" width="400" height="500" loading="lazy">
           </div>
-          <div class="reveal">
-            <p class="benefit-card__title">Dr. Karl-Erik Tillmann</p>
-            <p class="benefit-card__text">Silmakirurg. Nooremad silmad, tänapäevased meetodid — kirurgiline täpsus ja patsiendikeskne lähenemine.</p>
+          <h3 class="team-card__name">Dr. Ants Haavel</h3>
+          <p class="team-card__role">Tegevjuht ja silmakirurg</p>
+          <p class="team-card__bio">20+ aastat kogemust. Üle 30 000 laserprotseduuri.</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-card__image">
+            <img src="https://ksa.ee/wp-content/uploads/2025/07/drtillmann.jpg" alt="Dr. Karl-Erik Tillmann" width="400" height="500" loading="lazy">
           </div>
-          <div class="reveal">
-            <p class="benefit-card__title">Op.õde Ave Treier</p>
-            <p class="benefit-card__text">Operatsiooniõde ja patsienditeekonna juht. Tagab, et iga patsient tunneb end turvaliselt enne ja pärast protseduuri.</p>
+          <h3 class="team-card__name">Dr. Karl-Erik Tillmann</h3>
+          <p class="team-card__role">Silmakirurg</p>
+          <p class="team-card__bio">Uue põlvkonna kirurg, kelle kätes on tuleviku tehnoloogia.</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-card__image">
+            <img src="https://ksa.ee/wp-content/uploads/2025/07/protseduuriode-ave.jpg" alt="Op.õde Ave Treier" width="400" height="500" loading="lazy">
           </div>
+          <h3 class="team-card__name">Op.õde Ave Treier</h3>
+          <p class="team-card__role">Operatsiooniõde</p>
+          <p class="team-card__bio">Sinu teekonna juht alates esimesest uuringust kuni viimase kontrollivisiidini.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section class="testimonials">
-  <div class="container">
-    <div class="section__label" style="text-align:center;">Kogemused</div>
-    <h2 class="section__title" style="text-align:center;margin-bottom:clamp(var(--space-10),4vw,var(--space-16));">Mida räägivad patsiendid</h2>
 
-    <div class="testimonials__grid">
-      <div class="testimonial reveal">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">„Olin šokis, sest ma nägin enda silmadega! Kogemus oli algusest lõpuni meeldiv ja professionaalne."</p>
-        <p class="testimonial__author">Stefan Airapetjan</p>
-      </div>
-      <div class="testimonial reveal">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">„Olin nii pikalt prillikandja, et unustasin ära, kui terav nägemine olla võib. Flow3 muutis minu elu."</p>
-        <p class="testimonial__author">Ragne Värk</p>
-      </div>
-      <div class="testimonial reveal">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">„Jäin tulemusega väga rahule ja taastumine oli oodatust kiirem. Soovitan soojalt kõigile, kes mõtlevad protseduuri peale."</p>
-        <p class="testimonial__author">Mariel Nagel</p>
+  <!-- ════════ TESTIMONIALS ════════ -->
+  <section class="section section--surface">
+    <div class="section__inner">
+      <span class="section__label reveal">Kogemused</span>
+      <h2 class="section__title reveal">Mida räägivad patsiendid</h2>
+      <p class="section__subtitle reveal">&nbsp;</p>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Tundsin end nagu kosmoselaeval. 10 minutit ja kõik oli tehtud. Järgmisel päeval nägin juba selgelt."</p>
+          <p class="testimonial-card__author">Stefan Airapetjan</p>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Kartsin aastaid, aga protseduur oli täiesti valutu. Parem otsus mu elus."</p>
+          <p class="testimonial-card__author">Kristin Kerro</p>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Mul oli -6 dioptrit. Nüüd näen ilma prillideta esimest korda 20 aasta jooksul."</p>
+          <p class="testimonial-card__author">Agnes Vanatoa</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== CONTACT FORM ===== -->
-<section class="contact" id="broneeri">
-  <div class="container">
-    <div class="contact__grid">
-      <div class="contact__info">
-        <div class="section__label">Broneeri aeg</div>
-        <h2 class="section__title">Esimene samm selge nägemise suunas</h2>
-        <p class="section__subtitle">Flow3 silmauuring kestab 60 minutit ning maksab 69 €*. Kui otsustate protseduuri kasuks, arvestatakse uuringu maksumus protseduuri hinnast maha.</p>
-        <p class="form__note" style="margin-top:var(--space-2);">* Uuringu maksumus (69 €) arvestatakse 100% ulatuses maha, kui tellite KSA teenuse 60 päeva jooksul pärast uuringut.</p>
 
-        <div style="margin-top:var(--space-8);display:flex;flex-direction:column;gap:var(--space-6);">
-          <div class="contact__detail">
-            <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div class="contact__detail-text">
-              <strong>Telefon</strong>
-              +372 644 5060
-            </div>
-          </div>
-          <div class="contact__detail">
-            <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div class="contact__detail-text">
-              <strong>Tallinn</strong>
-              J. Vilmsi 5 / Raua 36
-            </div>
-          </div>
-          <div class="contact__detail">
-            <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div class="contact__detail-text">
-              <strong>Tartu</strong>
-              Riia 2, 2. korrus
-            </div>
-          </div>
+  <!-- ════════ PRICING ════════ -->
+  <section class="section" id="hinnakiri">
+    <div class="section__inner">
+      <span class="section__label reveal">Hinnakiri</span>
+      <h2 class="section__title reveal">Läbipaistev hinnakujundus</h2>
+      <p class="section__subtitle reveal">Lisatasusid ei ole. Hind sisaldab kõiki eeluuringuid ja järelkontrolle.</p>
+
+      <div class="pricing__grid">
+        <div class="pricing-card reveal">
+          <h3 class="pricing-card__name">Flow3 Standard</h3>
+          <div class="pricing-card__price">€2 990 <span>/ mõlemad silmad</span></div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Kõik eeluuringud
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Flow3 SmartSurface protseduur
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Kuni 5 aasta garantii
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Kõik järelkontrollid (1 aasta)
+            </li>
+          </ul>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <h3 class="pricing-card__name">Flow3 Signature</h3>
+          <div class="pricing-card__price">€3 990 <span>/ mõlemad silmad</span></div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Kõik, mis Standard paketis
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Laiendatud 7 aasta garantii
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Prioriteetne ajakava
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Isiklik otseliin kirurgile
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div>
-        <form class="form" id="contactForm" novalidate>
-          <div class="form__row">
-            <div class="form__group">
-              <label class="form__label" for="name">Nimi</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Eesnimi Perenimi" required>
+      <p class="pricing__note reveal">Flow3 eeluuringu hind on 69 €, mis arvestatakse protseduuri hinnast maha.</p>
+      <div class="pricing__cta reveal">
+        <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary">Broneeri uuring</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════ CONTACT / BOOKING FORM ════════ -->
+  <section class="section section--surface" id="kontakt">
+    <div class="section__inner">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <h3>Telefon</h3>
+          <p><a href="tel:+3726445060">+372 644 5060</a></p>
+
+          <h3>E-post</h3>
+          <p><a href="mailto:info@ksa.ee">info@ksa.ee</a></p>
+
+          <h3>Tallinn</h3>
+          <p>J. Vilmsi 5 / Raua 36<br>Tallinn, Eesti</p>
+
+          <h3>Tartu</h3>
+          <p>Riia 2, 2. korrus<br>Tartu, Eesti</p>
+        </div>
+
+        <div class="reveal">
+          <form class="form" id="contactForm">
+            <input type="hidden" name="access_key" value="f56ae819-28ae-4b51-9177-120a7fe65863">
+            <input type="hidden" name="subject" value="Uus kontakt — KSA Flow3">
+            <input type="hidden" name="from_name" value="KSA Flow3">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" style="display:none">
+
+            <div class="form__field">
+              <label class="form__label" for="name">Eesnimi</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Sinu eesnimi" required>
             </div>
-            <div class="form__group">
+
+            <div class="form__field">
               <label class="form__label" for="age">Vanus</label>
-              <input class="form__input" type="number" id="age" name="age" placeholder="nt 28" min="18" max="60" required>
+              <input class="form__input" type="number" id="age" name="age" placeholder="Vanus" min="18" max="99">
             </div>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="email">E-post</label>
-            <input class="form__input" type="email" id="email" name="email" placeholder="nimi@näide.ee" required>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="phone">Telefon</label>
-            <input class="form__input" type="tel" id="phone" name="phone" placeholder="+372 5xxx xxxx" required>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="diopter">Prillide tugevus (dioptrid)</label>
-            <input class="form__input" type="text" id="diopter" name="diopter" placeholder="nt −3.5 või ei tea täpselt">
-          </div>
-          <button type="submit" class="btn btn--dark" style="width:100%;margin-top:var(--space-2);">Saada päring</button>
-          <p class="form__note">* Uuringu maksumus (69 €) arvestatakse 100% ulatuses maha, kui tellite KSA teenuse 60 päeva jooksul pärast uuringut.</p>
-          <p class="form__note">Andmeid kasutatakse ainult uuringu broneerimiseks. Vastame tavaliselt ühe tööpäeva jooksul.</p>
-        </form>
 
-        <div class="form__success" id="formSuccess">
-          <p>Päring saadetud</p>
-          <span>Võtame teiega ühendust esimesel võimalusel, et leppida kokku uuringu aeg.</span>
+            <div class="form__field">
+              <label class="form__label" for="email">E-post</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="sinu@email.ee" required>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="phone">Telefon</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+372 5XXX XXXX">
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="diopter">Prillide tugevus (dioptrid)</label>
+              <input class="form__input" type="text" id="diopter" name="diopter" placeholder="nt -3.5">
+            </div>
+
+            <button type="submit" class="btn btn--dark form__submit">Saada</button>
+            <p class="form__privacy">Saates nõustud, et KSA Silmakeskus võtab sinuga ühendust. Me ei jaga sinu andmeid kolmandate osapooltega.</p>
+          </form>
+
+          <div class="form__success" id="formSuccess">
+            <h3>Aitäh!</h3>
+            <p>Sinu sõnum on saadetud. Võtame sinuga peagi ühendust.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== FAQ ===== -->
-<section class="faq" id="korduma">
-  <div class="container">
-    <div class="section__label" style="text-align:center;">Korduma kippuvad küsimused</div>
-    <h2 class="section__title" style="text-align:center;margin-bottom:clamp(var(--space-10),4vw,var(--space-16));">Enne otsustamist on kasulik teada</h2>
 
-    <div class="faq__list">
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Kas Flow3 protseduur on valus?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Flow3 on täiesti valutu. Enne protseduuri tilgutatakse silma tuimestustilgad. Laser töötab ainult sarvkesta pinnal ilma silma kordagi puudutamata. Patsientide sõnul on kogemus üllatavalt kerge.</div></div>
-      </div>
+  <!-- ════════ FAQ ════════ -->
+  <section class="section" id="kkk">
+    <div class="section__inner" style="text-align: center;">
+      <span class="section__label reveal">KKK</span>
+      <h2 class="section__title reveal" style="margin-left: auto; margin-right: auto;">Enne otsustamist on kasulik teada</h2>
+      <p class="section__subtitle reveal" style="margin-left: auto; margin-right: auto;">&nbsp;</p>
+    </div>
+    <div class="section__inner">
+      <div class="faq__list">
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Kas protseduur on valulik?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Ei. Flow3 on täielikult puutevaba protseduur. Enne protseduuri tilgutatakse silma tuimestavaid tilkasid, nii et sa ei tunne midagi. Enamik patsiente kirjeldab ainult kerget survetunnet, mis kestab mõned sekundid.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Kui kiiresti nägemine taastub?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Funktsionaalne nägemine taastub esimeste päevadega — liikuda ja töötada saab peagi pärast protseduuri. Täielik nägemisteravus stabiliseerub 2–3 kuu jooksul.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Kui kiiresti nägemine taastub?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Enamik patsiente näeb selgelt 24–48 tunni jooksul. Täielik stabiliseerumine toimub 1–3 kuu jooksul. Jõusaali ja basseini saab tagasi minna juba 7 päeva pärast.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Kellele Flow3 sobib?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Flow3 sobib 18–45-aastastele, kelle prillide tugevus on kuni −9 dioptrit ning kellel on stabiilne nägemine vähemalt 12 kuud. Lõpliku sobivuse selgitab alati silmauuring.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Kes sobib Flow3 kandidaadiks?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Üldjuhul 18–45-aastased lühinägevusega inimesed, kelle prillitugevus on kuni -8 dioptrit. Lõpliku sobivuse selgitab 75-minutiline Flow3 silmauuring (69 €).</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Mis eristab Flow3-e LASIK-ist ja SMILE-ist?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Flow3 on ainus meetod, mis ei tee sarvkestas lõiget. LASIK loob klapiga lõike, SMILE teeb 3 mm sisselõike. Flow3 töötleb ainult sarvkesta pindmist kihti, säilitades silma loomuliku tugevuse. Tulemusena on vähem riske, parem öine nägemine ja hilisem lugemisprilide vajadus.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Mille poolest erineb Flow3 LASIK-ist?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">LASIK lõikab sarvkesta klapi, SMILE lõikab väikese sisselõike. Flow3 ei lõika üldse — kogu protseduur on pinnapealne ja puutevaba. See tähendab väiksemat riski, kiiremat paranemist ja paremat öist nägemist.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Kui palju protseduur maksab?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Flow3 laserprotseduur maksab 2990 € ja sisaldab silmatilku kuni 3 kuud, kontrollvisiite 12 kuud, päikeseprille ning 7-aastast garantiid. Silmauuring maksab 69 €*. Järelmaks on võimalik. *Uuringu maksumus arvestatakse 100% ulatuses maha, kui tellite KSA teenuse 60 päeva jooksul.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Mis on Flow3 hind?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Flow3 Standard maksab 2 990 € ja Signature 3 990 € (mõlemad silmad). Hind sisaldab kõiki eeluuringuid ja järelkontrolle. Eeluuringu hind on 69 €, mis arvestatakse protseduuri hinnast maha.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Kas pärast protseduuri on piiranguid?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Esimese nädala jooksul tuleks vältida silmade hõõrumist, ujumist ja saunaskäimist. Hapnikku läbilaskvad kontaktläätsed kaitsevad silmi 5–6 päeva. Ekraanide kasutamine ja kerge füüsiline tegevus on lubatud peaaegu kohe.</div></div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Kas pärast protseduuri on piiranguid?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Esimese nädala jooksul väldi veekogusid ja intensiivset sporti. Silmade hõõrumist tuleb vältida 2 nädalat. Ekraaniaega võid kasutada juba järgmisel päeval. Täpsemad juhised saad protseduuri järel.</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <svg viewBox="0 0 120 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:28px;width:auto;" aria-hidden="true">
-          <text x="0" y="36" font-family="Geist, sans-serif" font-weight="500" font-size="38" fill="#87be23" letter-spacing="-2">ksa</text>
-        </svg>
-        <p>KSA Silmakeskus — Eesti juhtiv laserkirurgia keskus. Üle 55 000 protseduuri, üle 300 000 silmauuringu.</p>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="./index.html" class="logo" aria-label="KSA Silmakeskus">
+            <span class="logo__main">ksa</span>
+            <span class="logo__sub">Silmakeskus</span>
+          </a>
+          <p>Eesti juhtiv silmakirurgia keskus. 20+ aastat kogemust, 55 000+ protseduuri.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Kontakt</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+3726445060">+372 644 5060</a></li>
+            <li><a href="mailto:info@ksa.ee">info@ksa.ee</a></li>
+            <li><a href="#">J. Vilmsi 5, Tallinn</a></li>
+            <li><a href="#">Riia 2, Tartu</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Teenused</h4>
+          <ul class="footer__links">
+            <li><a href="#eelised">Flow3 protseduur</a></li>
+            <li><a href="#hinnakiri">Flow3 Signature</a></li>
+            <li><a href="#uuring">Silmauuringud</a></li>
+            <li><a href="#hinnakiri">Hinnakiri</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p class="footer__heading">Kontakt</p>
-        <ul class="footer__links" role="list">
-          <li><a href="tel:+3726445060">+372 644 5060</a></li>
-          <li><a href="mailto:info@ksa.ee">info@ksa.ee</a></li>
-          <li>Tallinn: J. Vilmsi 5 / Raua 36</li>
-          <li>Tartu: Riia 2, 2. korrus</li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer__heading">Teenused</p>
-        <ul class="footer__links" role="list">
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Flow3 protseduur</a></li>
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Flow3 Signature</a></li>
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Silmauuringud</a></li>
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Hinnakiri</a></li>
-        </ul>
+
+      <div class="footer__bottom">
+        © 2026 KSA Silmakeskus OÜ
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>© 2026 KSA Silmakeskus. Kõik õigused kaitstud.</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-// Mobile nav toggle
-document.getElementById('mobileToggle').addEventListener('click', function() {
-  document.getElementById('mainNav').classList.toggle('open');
-});
 
-// Scroll reveal
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-revealEls.forEach(el => observer.observe(el));
+  <!-- ════════ JAVASCRIPT ════════ -->
+  <script>
+    /* Mobile Nav Toggle */
+    (function() {
+      var hamburger = document.querySelector('.hamburger');
+      var mobileNav = document.getElementById('mobileNav');
 
-// FAQ accordion
-document.querySelectorAll('.faq__question').forEach(btn => {
-  btn.addEventListener('click', function() {
-    const item = this.parentElement;
-    const answer = item.querySelector('.faq__answer');
-    const isActive = item.classList.contains('active');
+      if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', function() {
+          hamburger.classList.toggle('is-active');
+          mobileNav.classList.toggle('is-open');
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', !expanded);
+          document.body.style.overflow = mobileNav.classList.contains('is-open') ? 'hidden' : '';
+        });
 
-    // Close all
-    document.querySelectorAll('.faq__item').forEach(i => {
-      i.classList.remove('active');
-      i.querySelector('.faq__answer').style.maxHeight = null;
-      i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
-    });
+        /* Close mobile nav on link click */
+        mobileNav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            hamburger.classList.remove('is-active');
+            mobileNav.classList.remove('is-open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+    })();
 
-    // Open clicked if was closed
-    if (!isActive) {
-      item.classList.add('active');
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-      this.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
+    /* Scroll Reveal */
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+      if (!reveals.length) return;
 
-// Contact form — submits directly to Web3Forms (client-side) for email delivery to info@ksa.ee
-const WEB3FORMS_KEY = '009b5e13-59a7-45ce-b0b5-00817fdc024b';
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
 
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
+      reveals.forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
 
-  const form = this;
-  const submitBtn = form.querySelector('button[type="submit"]');
-  const name = form.name.value.trim();
-  const age = form.age.value.trim();
-  const email = form.email.value.trim();
-  const phone = form.phone.value.trim();
-  const diopter = form.diopter.value.trim();
+    /* FAQ Accordion */
+    (function() {
+      var faqItems = document.querySelectorAll('.faq-item');
 
-  // Validate
-  if (!name || !age || !email || !phone) {
-    alert('Palun täitke kõik kohustuslikud väljad.');
-    return;
-  }
+      faqItems.forEach(function(item) {
+        var question = item.querySelector('.faq-item__question');
+        var answer = item.querySelector('.faq-item__answer');
 
-  // Email validation
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    alert('Palun sisestage korrektne e-posti aadress.');
-    return;
-  }
+        question.addEventListener('click', function() {
+          var isOpen = item.classList.contains('is-open');
 
-  // Show loading state
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Saadan...';
+          /* Close all other items */
+          faqItems.forEach(function(other) {
+            if (other !== item) {
+              other.classList.remove('is-open');
+              other.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
+              other.querySelector('.faq-item__answer').style.maxHeight = '0';
+            }
+          });
 
-  const messageBody = [
-    'Flow3 silmauuringu päring maandumislehelt',
-    '',
-    'Nimi: ' + name,
-    'Vanus: ' + age,
-    'E-post: ' + email,
-    'Telefon: ' + phone,
-    'Dioptrid: ' + (diopter || 'Ei märgitud'),
-    'Keel: ET',
-    '',
-    'Submitted: ' + new Date().toISOString()
-  ].join('\n');
+          /* Toggle current item */
+          if (isOpen) {
+            item.classList.remove('is-open');
+            question.setAttribute('aria-expanded', 'false');
+            answer.style.maxHeight = '0';
+          } else {
+            item.classList.add('is-open');
+            question.setAttribute('aria-expanded', 'true');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    })();
 
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        access_key: WEB3FORMS_KEY,
-        subject: 'Flow3 silmauuringu päring — ' + name,
-        from_name: name,
-        replyto: email,
-        name: name,
-        age: age,
-        email: email,
-        phone: phone,
-        diopter: diopter || 'Ei märgitud',
-        message: messageBody
-      })
-    });
+    /* Form Submission */
+    (function() {
+      var form = document.getElementById('contactForm');
+      var success = document.getElementById('formSuccess');
 
-    const data = await res.json();
-    if (data.success) {
-      form.style.display = 'none';
-      document.getElementById('formSuccess').classList.add('active');
-    } else {
-      throw new Error(data.message || 'Submission failed');
-    }
-  } catch(err) {
-    // Fallback to mailto
-    const subject = encodeURIComponent('Flow3 silmauuringu päring — ' + name);
-    const body = encodeURIComponent(
-      'Uus Flow3 silmauuringu päring:\n\n' +
-      'Nimi: ' + name + '\n' +
-      'Vanus: ' + age + '\n' +
-      'E-post: ' + email + '\n' +
-      'Telefon: ' + phone + '\n' +
-      'Prillide tugevus: ' + (diopter || 'Ei märgitud') + '\n\n' +
-      'Palun võtke patsiendiga ühendust uuringu aja kokkuleppimiseks.'
-    );
-    window.location.href = 'mailto:info@ksa.ee?subject=' + subject + '&body=' + body;
+      if (!form) return;
 
-    form.style.display = 'none';
-    document.getElementById('formSuccess').classList.add('active');
-  } finally {
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Saada päring';
-  }
-});
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-// Smooth scroll for nav links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('mainNav').classList.remove('open');
-    }
-  });
-});
-</script>
+        var formData = new FormData(form);
+        var json = {};
+        formData.forEach(function(value, key) { json[key] = value; });
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(json)
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+          if (data.success) {
+            form.style.display = 'none';
+            success.classList.add('is-visible');
+          } else {
+            /* Fallback to mailto */
+            window.location.href = 'mailto:info@ksa.ee?subject=Uus%20kontakt%20-%20KSA%20Flow3&body=' + encodeURIComponent('Nimi: ' + json.name + '\nE-post: ' + json.email + '\nTelefon: ' + (json.phone || '') + '\nVanus: ' + (json.age || '') + '\nDioptrid: ' + (json.diopter || ''));
+          }
+        })
+        .catch(function() {
+          window.location.href = 'mailto:info@ksa.ee?subject=Uus%20kontakt%20-%20KSA%20Flow3&body=' + encodeURIComponent('Nimi: ' + json.name + '\nE-post: ' + json.email + '\nTelefon: ' + (json.phone || '') + '\nVanus: ' + (json.age || '') + '\nDioptrid: ' + (json.diopter || ''));
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

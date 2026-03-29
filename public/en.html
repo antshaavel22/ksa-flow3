@@ -1,576 +1,639 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 <head>
-<!--
-   ______                            __
-  / ____/___  ____ ___  ____  __  __/ /____  _____
- / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
-\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
-                    /_/
-        Created with Perplexity Computer
-        https://www.perplexity.ai/computer
--->
-
-<!-- Perplexity Computer Attribution — SEO Meta Tags -->
-<meta name="generator" content="Perplexity Computer">
-<meta name="author" content="Perplexity Computer">
-<meta property="og:see_also" content="https://www.perplexity.ai/computer">
-<link rel="author" href="https://www.perplexity.ai/computer">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flow3 Eye Examination — KSA Eye Centre</title>
-<meta name="description" content="Book a Flow3 eye examination and take the first step towards life without glasses. KSA Eye Centre — Estonia's leading laser surgery centre, 55,000+ procedures.">
-<meta property="og:title" content="Flow3 Eye Examination — KSA Eye Centre">
-<meta property="og:description" content="Book a Flow3 eye examination. An incision-free laser procedure that has helped over 35,000 people free themselves from glasses.">
-<meta property="og:type" content="website">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./base.css">
-<link rel="stylesheet" href="./style.css">
-<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSA Eye Centre — Flow3 Laser Procedure</title>
+  <meta name="description" content="Flow3 — the only fully touch-free laser procedure in Estonia. 55,000+ procedures, 0 ectasia cases, up to 7-year guarantee.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="https://ksa.ee" target="_blank" rel="noopener noreferrer" class="header__logo" aria-label="KSA Eye Centre">
-      <svg viewBox="0 0 120 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <text x="0" y="36" font-family="Geist, sans-serif" font-weight="500" font-size="38" fill="#87be23" letter-spacing="-2">ksa</text>
-      </svg>
-    </a>
-    <nav class="header__nav" id="mainNav">
-      <a href="#eelised">Benefits</a>
-      <a href="#uuring">Examination</a>
-      <a href="#meeskond">Team</a>
-      <a href="#korduma">FAQ</a>
-      <div class="lang-switch">
-        <a href="./index.html">ET</a>
-        <a href="./ru.html">RU</a>
-        <a href="./en.html" class="active">EN</a>
-      </div>
-      <a href="#broneeri" class="header__cta">Book now</a>
-    </nav>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+  <!-- ════════ HEADER ════════ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="./en.html" class="logo" aria-label="KSA Eye Centre">
+        <span class="logo__main">ksa</span>
+        <span class="logo__sub">Eye Centre</span>
+      </a>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="container">
-    <div class="hero__grid">
+      <div class="header__right">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#benefits" class="nav__link">Benefits</a>
+          <a href="#team" class="nav__link">Team</a>
+          <a href="#pricing" class="nav__link">Pricing</a>
+          <a href="#faq" class="nav__link">FAQ</a>
+        </nav>
+
+        <div class="lang-switch">
+          <a href="./index.html">ET</a>
+          <a href="./ru.html">RU</a>
+          <a href="./en.html" class="active">EN</a>
+        </div>
+
+        <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary btn--sm">Book now</a>
+
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#benefits" class="mobile-nav__link">Benefits</a>
+    <a href="#team" class="mobile-nav__link">Team</a>
+    <a href="#pricing" class="mobile-nav__link">Pricing</a>
+    <a href="#faq" class="mobile-nav__link">FAQ</a>
+    <div class="lang-switch">
+      <a href="./index.html">ET</a>
+      <a href="./ru.html">RU</a>
+      <a href="./en.html" class="active">EN</a>
+    </div>
+    <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary">Book an examination</a>
+  </div>
+
+
+  <!-- ════════ HERO ════════ -->
+  <section class="hero">
+    <div class="hero__inner">
       <div class="hero__content">
-        <div class="hero__badge">Estonia's leading laser surgery centre</div>
-        <h1 class="hero__title">Clear vision begins with a single examination</h1>
-        <p class="hero__subtitle">The Flow3 eye examination provides a complete overview of your eye health and clarity on whether an incision-free laser procedure is the right choice for you. A 60-minute examination. Thousands of measured parameters. A clear answer.</p>
-        <div class="hero__actions">
-          <a href="#broneeri" class="btn btn--primary">Book examination — €69*</a>
-          <a href="#eelised" class="btn btn--outline">Why Flow3?</a>
+        <span class="hero__badge reveal">Estonia's leading laser eye surgery centre</span>
+        <h1 class="hero__title reveal">See the world
+without glasses.</h1>
+        <p class="hero__subtitle reveal">Flow3 — the only fully touch-free laser procedure in Estonia. 55,000+ procedures. 0 ectasia cases. Up to 7-year guarantee.</p>
+        <div class="hero__actions reveal">
+          <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary">Book an examination — €69</a>
+          <a href="#benefits" class="btn btn--outline">Why Flow3?</a>
         </div>
       </div>
-      <div class="hero__image">
-        <img src="./assets/procedure.jpg" alt="Flow3 laser procedure at KSA Eye Centre" loading="eager" width="800" height="600">
+      <div class="hero__image reveal">
+        <img src="https://ksa.ee/wp-content/uploads/2025/08/jake_farra_0074_bra.jpg" alt="KSA operating room — SCHWIND laser system" width="600" height="450" loading="eager">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== STATS ===== -->
-<section class="stats">
-  <div class="container">
-    <div class="stats__grid">
-      <div class="reveal">
-        <div class="stats__number">55,000+</div>
-        <div class="stats__label">Laser procedures</div>
+
+  <!-- ════════ STATS BANNER ════════ -->
+  <section class="stats">
+    <div class="stats__inner reveal">
+      <div class="stat">
+        <div class="stat__number">55,000+</div>
+        <div class="stat__label">laser procedures</div>
       </div>
-      <div class="reveal">
-        <div class="stats__number">300,000+</div>
-        <div class="stats__label">Eye examinations</div>
+      <div class="stat">
+        <div class="stat__number">300,000+</div>
+        <div class="stat__label">eye examinations</div>
       </div>
-      <div class="reveal">
-        <div class="stats__number">7 years</div>
-        <div class="stats__label">Guarantee</div>
+      <div class="stat">
+        <div class="stat__number">7 years</div>
+        <div class="stat__label">guarantee</div>
       </div>
-      <div class="reveal">
-        <div class="stats__number">0</div>
-        <div class="stats__label">Ectasia cases</div>
+      <div class="stat">
+        <div class="stat__number">0</div>
+        <div class="stat__label">ectasia cases</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== BENEFITS ===== -->
-<section class="benefits" id="eelised">
-  <div class="container">
-    <div class="section__label">Why Flow3</div>
-    <h2 class="section__title">Estonia's only completely incision-free laser procedure</h2>
-    <p class="section__subtitle">Unlike traditional LASIK and FemtoLasik procedures, Flow3 makes no incision in the cornea. The laser reshapes only the surface layer of the cornea, which means fewer risks and faster recovery.</p>
 
-    <div class="benefits__grid">
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+  <!-- ════════ BENEFITS ════════ -->
+  <section class="section" id="benefits">
+    <div class="section__inner">
+      <span class="section__label reveal">Why Flow3</span>
+      <h2 class="section__title reveal">The only fully touch-free laser procedure in Estonia</h2>
+      <p class="section__subtitle reveal">Flow3 SmartSurface uses patented energy-optimised technology — touch-free, cut-free, safe.</p>
+
+      <div class="benefits__grid">
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="14"/><path d="M20 12v8l5.5 3"/></svg>
+          <h3 class="benefit-card__title">Fully touch-free</h3>
+          <p class="benefit-card__text">The laser never touches your eye. The entire procedure is contact-free.</p>
         </div>
-        <h3 class="benefit-card__title">Completely touch-free</h3>
-        <p class="benefit-card__text">The procedure is performed without a scalpel or mechanical contact. The laser works solely on the corneal surface — painless and safe.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28l6-10 5 6 4-8 9 12"/><rect x="6" y="8" width="28" height="24" rx="2"/></svg>
+          <h3 class="benefit-card__title">25–50% less energy</h3>
+          <p class="benefit-card__text">Patented SCHWIND technology uses significantly less energy than competitors.</p>
         </div>
-        <h3 class="benefit-card__title">Quick procedure</h3>
-        <p class="benefit-card__text">The entire procedure takes just a few minutes. You can move about immediately afterwards, with full visual acuity stabilising within 2–3 months.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6v4m0 20v4m-14-14h4m20 0h4"/><circle cx="20" cy="20" r="8"/><path d="M14.34 14.34l2.83 2.83m5.66 5.66l2.83 2.83m0-11.32l-2.83 2.83m-5.66 5.66l-2.83 2.83"/></svg>
+          <h3 class="benefit-card__title">Rapid recovery</h3>
+          <p class="benefit-card__text">Back to the gym and pool within 7 days. Life-changing speed.</p>
         </div>
-        <h3 class="benefit-card__title">Better night vision</h3>
-        <p class="benefit-card__text">Flow3 preserves corneal biomechanics more effectively than incision-based methods, resulting in more stable vision in low-light conditions.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6C10 6 4 20 4 20s6 14 16 14 16-14 16-14S30 6 20 6z"/><circle cx="20" cy="20" r="6"/></svg>
+          <h3 class="benefit-card__title">Better night vision</h3>
+          <p class="benefit-card__text">Preserves corneal strength — fewer disturbances in the dark.</p>
         </div>
-        <h3 class="benefit-card__title">Later need for reading glasses</h3>
-        <p class="benefit-card__text">Clinical studies show that the touch-free method preserves near vision for longer — the need for reading glasses is delayed by an average of 5 years.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M28 14l-12 12-6-6"/><rect x="6" y="6" width="28" height="28" rx="4"/></svg>
+          <h3 class="benefit-card__title">Up to 7-year guarantee</h3>
+          <p class="benefit-card__text">The longest guarantee in the Baltics. Your peace of mind is our priority.</p>
         </div>
-        <h3 class="benefit-card__title">Personalised treatment plan</h3>
-        <p class="benefit-card__text">Every patient's eyes are different. The 60-minute pre-procedure examination measures thousands of parameters, from which an individual treatment plan is prepared.</p>
-      </div>
 
-      <div class="benefit-card reveal">
-        <div class="benefit-card__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <div class="benefit-card reveal">
+          <svg class="benefit-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8l3 6h7l-5.5 4.5 2 7L20 21l-6.5 4.5 2-7L10 14h7z"/></svg>
+          <h3 class="benefit-card__title">0 ectasia cases</h3>
+          <p class="benefit-card__text">55,000+ procedures and zero serious complications. Absolute safety.</p>
         </div>
-        <h3 class="benefit-card__title">Less energy, better results</h3>
-        <p class="benefit-card__text">Flow3 uses 25–50% less laser energy than competing methods. Less energy means less tissue affected, faster recovery, and better outcomes.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== PROCESS / HOW IT WORKS ===== -->
-<section class="process" id="uuring">
-  <div class="container">
-    <div class="process__grid">
-      <div class="process__image reveal">
-        <img src="./assets/clinic.jpg" alt="KSA Eye Centre diagnostics suite" loading="lazy" width="800" height="600">
-      </div>
-      <div>
-        <div class="section__label">Flow3 eye examination</div>
-        <h2 class="section__title">What happens during the examination?</h2>
-        <p class="section__subtitle">The 60-minute examination provides a complete picture of your eye health. An optometrist and ophthalmic surgeon document thousands of parameters and give you a clear answer on whether laser treatment is suitable.</p>
 
+  <!-- ════════ PROCESS ════════ -->
+  <section class="section section--surface" id="examination">
+    <div class="section__inner">
+      <span class="section__label reveal">Flow3 eye examination</span>
+      <h2 class="section__title reveal">What happens during the examination?</h2>
+      <p class="section__subtitle reveal">A thorough 75-minute examination that shows precisely whether Flow3 is right for you.</p>
+
+      <div class="process__grid">
+        <div class="process__image reveal">
+          <img src="https://ksa.ee/wp-content/uploads/2025/08/flow3silmauuring-e1771594938162.jpg" alt="KSA examination room" width="600" height="450" loading="lazy">
+        </div>
         <div class="process__steps">
           <div class="step reveal">
-            <div class="step__number">01</div>
-            <div>
+            <div class="step__number">1</div>
+            <div class="step__content">
               <h3 class="step__title">Corneal diagnostics</h3>
-              <p class="step__text">Topography, tomography, thickness measurement, pupil size, tear film analysis, and dozens of additional measurements.</p>
+              <p class="step__text">The SCHWIND Sirius+ topographer maps the shape and thickness of your cornea with micron-level precision.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step__number">02</div>
-            <div>
+            <div class="step__number">2</div>
+            <div class="step__content">
               <h3 class="step__title">Retinal and fundus examinations</h3>
-              <p class="step__text">Nerve studies, visual acuity tests, visual field assessment, and fundus photography.</p>
+              <p class="step__text">We examine your eye health comprehensively — including the parts you cannot feel yourself.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step__number">03</div>
-            <div>
-              <h3 class="step__title">Surgeon consultation and treatment plan</h3>
-              <p class="step__text">The ophthalmic surgeon analyses the examination results, explains your options, and prepares an individual treatment plan where appropriate.</p>
+            <div class="step__number">3</div>
+            <div class="step__content">
+              <h3 class="step__title">Surgeon consultation</h3>
+              <p class="step__text">The ophthalmic surgeon explains the results and creates a personalised treatment plan.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== TEAM ===== -->
-<section class="team" id="meeskond">
-  <div class="container">
-    <div class="team__grid">
-      <div class="team__image reveal">
-        <img src="./assets/team.jpg" alt="KSA Eye Centre team: Dr Karl-Erik Tillmann, Theatre Nurse Ave Treier, and Dr Ants Haavel" loading="lazy" width="1200" height="800">
-      </div>
-      <div>
-        <div class="section__label">Team</div>
-        <h2 class="section__title">Professionals with 20 years of experience</h2>
-        <p class="section__subtitle" style="margin-bottom: var(--space-8);">The KSA Eye Centre team has performed over 55,000 laser procedures without a single case of ectasia. That is a safety record that speaks for itself.</p>
 
-        <div style="display:flex;flex-direction:column;gap:var(--space-6);">
-          <div class="reveal">
-            <p class="benefit-card__title">Dr. Ants Haavel</p>
-            <p class="benefit-card__text">CEO and ophthalmic surgeon. A laser surgery specialist with more than 20 years of experience.</p>
+  <!-- ════════ TEAM ════════ -->
+  <section class="section" id="team">
+    <div class="section__inner">
+      <span class="section__label reveal">Team</span>
+      <h2 class="section__title reveal">20+ years of experience. Your eyes in the best hands.</h2>
+      <p class="section__subtitle reveal">26 of our 27 employees chose Flow3 for themselves.</p>
+
+      <div class="team__grid">
+        <div class="team-card reveal">
+          <div class="team-card__image">
+            <img src="https://ksa.ee/wp-content/uploads/2025/07/drhaavel.jpg" alt="Dr Ants Haavel" width="400" height="500" loading="lazy">
           </div>
-          <div class="reveal">
-            <p class="benefit-card__title">Dr. Karl-Erik Tillmann</p>
-            <p class="benefit-card__text">Ophthalmic surgeon. A younger perspective, contemporary methods — surgical precision and a patient-centred approach.</p>
+          <h3 class="team-card__name">Dr Ants Haavel</h3>
+          <p class="team-card__role">CEO and ophthalmic surgeon</p>
+          <p class="team-card__bio">20+ years of experience. Over 30,000 laser procedures.</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-card__image">
+            <img src="https://ksa.ee/wp-content/uploads/2025/07/drtillmann.jpg" alt="Dr Karl-Erik Tillmann" width="400" height="500" loading="lazy">
           </div>
-          <div class="reveal">
-            <p class="benefit-card__title">Op.õde Ave Treier</p>
-            <p class="benefit-card__text">Theatre nurse and patient journey lead. Ensures every patient feels safe and supported before and after the procedure.</p>
+          <h3 class="team-card__name">Dr Karl-Erik Tillmann</h3>
+          <p class="team-card__role">Ophthalmic surgeon</p>
+          <p class="team-card__bio">A next-generation surgeon with the technology of the future in his hands.</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-card__image">
+            <img src="https://ksa.ee/wp-content/uploads/2025/07/protseduuriode-ave.jpg" alt="Ave Treier" width="400" height="500" loading="lazy">
           </div>
+          <h3 class="team-card__name">Ave Treier</h3>
+          <p class="team-card__role">Theatre nurse</p>
+          <p class="team-card__bio">Your guide from the first examination to the final follow-up visit.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section class="testimonials">
-  <div class="container">
-    <div class="section__label" style="text-align:center;">Testimonials</div>
-    <h2 class="section__title" style="text-align:center;margin-bottom:clamp(var(--space-10),4vw,var(--space-16));">What patients say</h2>
 
-    <div class="testimonials__grid">
-      <div class="testimonial reveal">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">"I was astonished — I could see with my own eyes! The experience was pleasant and professional from start to finish."</p>
-        <p class="testimonial__author">Stefan Airapetjan</p>
-      </div>
-      <div class="testimonial reveal">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">"I had worn glasses for so long that I'd forgotten how sharp vision could be. Flow3 truly changed my life."</p>
-        <p class="testimonial__author">Ragne Värk</p>
-      </div>
-      <div class="testimonial reveal">
-        <div class="testimonial__stars">★★★★★</div>
-        <p class="testimonial__text">"I was very pleased with the result and the recovery was quicker than expected. I would wholeheartedly recommend it to anyone considering the procedure."</p>
-        <p class="testimonial__author">Mariel Nagel</p>
+  <!-- ════════ TESTIMONIALS ════════ -->
+  <section class="section section--surface">
+    <div class="section__inner">
+      <span class="section__label reveal">Experiences</span>
+      <h2 class="section__title reveal">What patients say</h2>
+      <p class="section__subtitle reveal">&nbsp;</p>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"I felt like I was on a spaceship. 10 minutes and it was done. The next day I could already see clearly."</p>
+          <p class="testimonial-card__author">Stefan Airapetjan</p>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"I was afraid for years, but the procedure was completely painless. The best decision of my life."</p>
+          <p class="testimonial-card__author">Kristin Kerro</p>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.47 5.01L18 6.9l-4 3.9.94 5.51L10 13.68l-4.94 2.63L6 10.8 2 6.9l5.53-.89z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"I had -6 dioptres. Now I can see without glasses for the first time in 20 years."</p>
+          <p class="testimonial-card__author">Agnes Vanatoa</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== CONTACT FORM ===== -->
-<section class="contact" id="broneeri">
-  <div class="container">
-    <div class="contact__grid">
-      <div class="contact__info">
-        <div class="section__label">Book an appointment</div>
-        <h2 class="section__title">The first step towards clear vision</h2>
-        <p class="section__subtitle">The Flow3 eye examination lasts 60 minutes and costs €69*. Should you decide to proceed with the procedure, the examination fee is deducted in full from the procedure price.</p>
-        <p class="form__note" style="margin-top:var(--space-2);">* The examination fee (€69) is deducted in full if you book a KSA service within 60 days of your examination.</p>
 
-        <div style="margin-top:var(--space-8);display:flex;flex-direction:column;gap:var(--space-6);">
-          <div class="contact__detail">
-            <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div class="contact__detail-text">
-              <strong>Telephone</strong>
-              +372 644 5060
-            </div>
-          </div>
-          <div class="contact__detail">
-            <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div class="contact__detail-text">
-              <strong>Tallinn</strong>
-              J. Vilmsi 5 / Raua 36
-            </div>
-          </div>
-          <div class="contact__detail">
-            <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div class="contact__detail-text">
-              <strong>Tartu</strong>
-              Riia 2, 2nd floor
-            </div>
-          </div>
+  <!-- ════════ PRICING ════════ -->
+  <section class="section" id="pricing">
+    <div class="section__inner">
+      <span class="section__label reveal">Pricing</span>
+      <h2 class="section__title reveal">Transparent pricing</h2>
+      <p class="section__subtitle reveal">No hidden fees. The price includes all pre-procedure examinations and follow-up visits.</p>
+
+      <div class="pricing__grid">
+        <div class="pricing-card reveal">
+          <h3 class="pricing-card__name">Flow3 Standard</h3>
+          <div class="pricing-card__price">€2,990 <span>/ both eyes</span></div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              All pre-procedure examinations
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Flow3 SmartSurface procedure
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Up to 5-year guarantee
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              All follow-up visits (1 year)
+            </li>
+          </ul>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <h3 class="pricing-card__name">Flow3 Signature</h3>
+          <div class="pricing-card__price">€3,990 <span>/ both eyes</span></div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Everything in Standard
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Extended 7-year guarantee
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Priority scheduling
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>
+              Personal direct line to surgeon
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div>
-        <form class="form" id="contactForm" novalidate>
-          <div class="form__row">
-            <div class="form__group">
-              <label class="form__label" for="name">Name</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="First name Surname" required>
+      <p class="pricing__note reveal">The Flow3 examination costs €69, which is deducted from the procedure price.</p>
+      <div class="pricing__cta reveal">
+        <a href="https://my.ksa.ee/et/icb-service-page" class="btn btn--primary">Book an examination</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════ CONTACT / BOOKING FORM ════════ -->
+  <section class="section section--surface" id="contact">
+    <div class="section__inner">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <h3>Phone</h3>
+          <p><a href="tel:+3726445060">+372 644 5060</a></p>
+
+          <h3>Email</h3>
+          <p><a href="mailto:info@ksa.ee">info@ksa.ee</a></p>
+
+          <h3>Tallinn</h3>
+          <p>J. Vilmsi 5 / Raua 36<br>Tallinn, Estonia</p>
+
+          <h3>Tartu</h3>
+          <p>Riia 2, 2nd floor<br>Tartu, Estonia</p>
+        </div>
+
+        <div class="reveal">
+          <form class="form" id="contactForm">
+            <input type="hidden" name="access_key" value="f56ae819-28ae-4b51-9177-120a7fe65863">
+            <input type="hidden" name="subject" value="New contact — KSA Flow3 (EN)">
+            <input type="hidden" name="from_name" value="KSA Flow3">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" style="display:none">
+
+            <div class="form__field">
+              <label class="form__label" for="name">First name</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Your first name" required>
             </div>
-            <div class="form__group">
+
+            <div class="form__field">
               <label class="form__label" for="age">Age</label>
-              <input class="form__input" type="number" id="age" name="age" placeholder="e.g. 28" min="18" max="60" required>
+              <input class="form__input" type="number" id="age" name="age" placeholder="Age" min="18" max="99">
             </div>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="email">Email</label>
-            <input class="form__input" type="email" id="email" name="email" placeholder="name@example.co.uk" required>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="phone">Phone</label>
-            <input class="form__input" type="tel" id="phone" name="phone" placeholder="+44 7xxx xxxxxx" required>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="diopter">Prescription strength (dioptres)</label>
-            <input class="form__input" type="text" id="diopter" name="diopter" placeholder="e.g. −3.5 or unsure">
-          </div>
-          <button type="submit" class="btn btn--dark" style="width:100%;margin-top:var(--space-2);">Send enquiry</button>
-          <p class="form__note">* The examination fee (€69) is deducted in full if you book a KSA service within 60 days of your examination.</p>
-          <p class="form__note">Your data is used solely for booking your examination. We typically respond within one working day.</p>
-        </form>
 
-        <div class="form__success" id="formSuccess">
-          <p>Enquiry sent</p>
-          <span>We shall be in touch at the earliest opportunity to arrange your examination.</span>
+            <div class="form__field">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="phone">Phone</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+372 5XXX XXXX">
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="diopter">Glasses strength (dioptres)</label>
+              <input class="form__input" type="text" id="diopter" name="diopter" placeholder="e.g. -3.5">
+            </div>
+
+            <button type="submit" class="btn btn--dark form__submit">Send</button>
+            <p class="form__privacy">By submitting, you agree that KSA Eye Centre may contact you. We do not share your data with third parties.</p>
+          </form>
+
+          <div class="form__success" id="formSuccess">
+            <h3>Thank you!</h3>
+            <p>Your message has been sent. We will be in touch shortly.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== FAQ ===== -->
-<section class="faq" id="korduma">
-  <div class="container">
-    <div class="section__label" style="text-align:center;">Frequently asked questions</div>
-    <h2 class="section__title" style="text-align:center;margin-bottom:clamp(var(--space-10),4vw,var(--space-16));">Useful to know before deciding</h2>
 
-    <div class="faq__list">
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Is the Flow3 procedure painful?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Flow3 is completely painless. Anaesthetic drops are applied to the eye before the procedure. The laser works solely on the corneal surface without ever touching the eye. Patients report that the experience is surprisingly gentle.</div></div>
-      </div>
+  <!-- ════════ FAQ ════════ -->
+  <section class="section" id="faq">
+    <div class="section__inner" style="text-align: center;">
+      <span class="section__label reveal">FAQ</span>
+      <h2 class="section__title reveal" style="margin-left: auto; margin-right: auto;">Useful to know before deciding</h2>
+      <p class="section__subtitle reveal" style="margin-left: auto; margin-right: auto;">&nbsp;</p>
+    </div>
+    <div class="section__inner">
+      <div class="faq__list">
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Is the procedure painful?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">No. Flow3 is a fully touch-free procedure. Numbing drops are applied before the procedure, so you feel nothing. Most patients describe only a slight sensation of pressure lasting a few seconds.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          How quickly does vision recover?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Functional vision returns within the first few days — you can move about and return to work shortly after the procedure. Full visual acuity stabilises within 2–3 months.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>How quickly does vision recover?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Most patients see clearly within 24–48 hours. Full stabilisation occurs within 1–3 months. You can return to the gym and pool after just 7 days.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Who is Flow3 suitable for?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Flow3 is suitable for those aged 18–45 with a prescription of up to −9 dioptres and stable vision for at least 12 months. Final suitability is always confirmed by the eye examination.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Who is suitable for Flow3?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Generally, people aged 18–45 with myopia of up to -8 dioptres. Final suitability is determined by the 75-minute Flow3 eye examination (€69).</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          What sets Flow3 apart from LASIK and SMILE?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Flow3 is the only method that makes no incision in the cornea. LASIK creates a flap incision, whilst SMILE makes a 3 mm incision. Flow3 treats only the surface layer of the cornea, preserving the eye's natural structural integrity. The result is fewer risks, better night vision, and a later need for reading glasses.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>How does Flow3 differ from LASIK?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">LASIK cuts a corneal flap, SMILE makes a small incision. Flow3 makes no cuts at all — the entire procedure is surface-based and touch-free. This means lower risk, faster healing, and better night vision.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          How much does the procedure cost?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">The Flow3 laser procedure costs €2,990 and includes eye drops for up to 3 months, follow-up visits for 12 months, sunglasses, and a 7-year guarantee. The eye examination costs €69*. Finance is available. *The examination fee is deducted in full if you book a KSA service within 60 days.</div></div>
-      </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>What does Flow3 cost?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Flow3 Standard costs €2,990 and Signature €3,990 (both eyes). The price includes all pre-procedure examinations and follow-up visits. The examination fee is €69, which is deducted from the procedure price.</div>
+          </div>
+        </div>
 
-      <div class="faq__item">
-        <button class="faq__question" aria-expanded="false">
-          Are there restrictions after the procedure?
-          <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </button>
-        <div class="faq__answer"><div class="faq__answer-inner">During the first week, you should avoid rubbing your eyes, swimming, and visiting saunas. Oxygen-permeable contact lenses protect the eyes for 5–6 days. Screen use and light physical activity are permitted almost immediately.</div></div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Are there restrictions after the procedure?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">During the first week, avoid bodies of water and intense sport. Do not rub your eyes for 2 weeks. You may use screens from the next day. Detailed instructions are provided after the procedure.</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <svg viewBox="0 0 120 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:28px;width:auto;" aria-hidden="true">
-          <text x="0" y="36" font-family="Geist, sans-serif" font-weight="500" font-size="38" fill="#87be23" letter-spacing="-2">ksa</text>
-        </svg>
-        <p>KSA Eye Centre — Estonia's leading laser surgery centre. Over 55,000 procedures, over 300,000 eye examinations.</p>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="./en.html" class="logo" aria-label="KSA Eye Centre">
+            <span class="logo__main">ksa</span>
+            <span class="logo__sub">Eye Centre</span>
+          </a>
+          <p>Estonia's leading laser eye surgery centre. 20+ years of experience, 55,000+ procedures.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+3726445060">+372 644 5060</a></li>
+            <li><a href="mailto:info@ksa.ee">info@ksa.ee</a></li>
+            <li><a href="#">J. Vilmsi 5, Tallinn</a></li>
+            <li><a href="#">Riia 2, Tartu</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="#benefits">Flow3 procedure</a></li>
+            <li><a href="#pricing">Flow3 Signature</a></li>
+            <li><a href="#examination">Eye examinations</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p class="footer__heading">Contact</p>
-        <ul class="footer__links" role="list">
-          <li><a href="tel:+3726445060">+372 644 5060</a></li>
-          <li><a href="mailto:info@ksa.ee">info@ksa.ee</a></li>
-          <li>Tallinn: J. Vilmsi 5 / Raua 36</li>
-          <li>Tartu: Riia 2, 2nd floor</li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer__heading">Services</p>
-        <ul class="footer__links" role="list">
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Flow3 procedure</a></li>
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Flow3 Signature</a></li>
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Eye examinations</a></li>
-          <li><a href="https://ksa.ee" target="_blank" rel="noopener noreferrer">Price list</a></li>
-        </ul>
+
+      <div class="footer__bottom">
+        © 2026 KSA Silmakeskus OÜ
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>© 2026 KSA Eye Centre. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-// Mobile nav toggle
-document.getElementById('mobileToggle').addEventListener('click', function() {
-  document.getElementById('mainNav').classList.toggle('open');
-});
 
-// Scroll reveal
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-revealEls.forEach(el => observer.observe(el));
+  <!-- ════════ JAVASCRIPT ════════ -->
+  <script>
+    /* Mobile Nav Toggle */
+    (function() {
+      var hamburger = document.querySelector('.hamburger');
+      var mobileNav = document.getElementById('mobileNav');
 
-// FAQ accordion
-document.querySelectorAll('.faq__question').forEach(btn => {
-  btn.addEventListener('click', function() {
-    const item = this.parentElement;
-    const answer = item.querySelector('.faq__answer');
-    const isActive = item.classList.contains('active');
+      if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', function() {
+          hamburger.classList.toggle('is-active');
+          mobileNav.classList.toggle('is-open');
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', !expanded);
+          document.body.style.overflow = mobileNav.classList.contains('is-open') ? 'hidden' : '';
+        });
 
-    // Close all
-    document.querySelectorAll('.faq__item').forEach(i => {
-      i.classList.remove('active');
-      i.querySelector('.faq__answer').style.maxHeight = null;
-      i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
-    });
+        mobileNav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            hamburger.classList.remove('is-active');
+            mobileNav.classList.remove('is-open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+    })();
 
-    // Open clicked if was closed
-    if (!isActive) {
-      item.classList.add('active');
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-      this.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
+    /* Scroll Reveal */
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+      if (!reveals.length) return;
 
-// Contact form — submits directly to Web3Forms (client-side) for email delivery to info@ksa.ee
-const WEB3FORMS_KEY = '009b5e13-59a7-45ce-b0b5-00817fdc024b';
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
 
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
+      reveals.forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
 
-  const form = this;
-  const submitBtn = form.querySelector('button[type="submit"]');
-  const name = form.name.value.trim();
-  const age = form.age.value.trim();
-  const email = form.email.value.trim();
-  const phone = form.phone.value.trim();
-  const diopter = form.diopter.value.trim();
+    /* FAQ Accordion */
+    (function() {
+      var faqItems = document.querySelectorAll('.faq-item');
 
-  // Validate
-  if (!name || !age || !email || !phone) {
-    alert('Please fill in all required fields.');
-    return;
-  }
+      faqItems.forEach(function(item) {
+        var question = item.querySelector('.faq-item__question');
+        var answer = item.querySelector('.faq-item__answer');
 
-  // Email validation
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    alert('Please enter a valid email address.');
-    return;
-  }
+        question.addEventListener('click', function() {
+          var isOpen = item.classList.contains('is-open');
 
-  // Show loading state
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Sending...';
+          faqItems.forEach(function(other) {
+            if (other !== item) {
+              other.classList.remove('is-open');
+              other.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
+              other.querySelector('.faq-item__answer').style.maxHeight = '0';
+            }
+          });
 
-  const messageBody = [
-    'Flow3 Eye Examination Enquiry from landing page',
-    '',
-    'Name: ' + name,
-    'Age: ' + age,
-    'Email: ' + email,
-    'Phone: ' + phone,
-    'Diopters: ' + (diopter || 'Not specified'),
-    'Language: EN',
-    '',
-    'Submitted: ' + new Date().toISOString()
-  ].join('\n');
+          if (isOpen) {
+            item.classList.remove('is-open');
+            question.setAttribute('aria-expanded', 'false');
+            answer.style.maxHeight = '0';
+          } else {
+            item.classList.add('is-open');
+            question.setAttribute('aria-expanded', 'true');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    })();
 
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        access_key: WEB3FORMS_KEY,
-        subject: 'Flow3 Eye Examination Enquiry — ' + name,
-        from_name: name,
-        replyto: email,
-        name: name,
-        age: age,
-        email: email,
-        phone: phone,
-        diopter: diopter || 'Not specified',
-        message: messageBody
-      })
-    });
+    /* Form Submission */
+    (function() {
+      var form = document.getElementById('contactForm');
+      var success = document.getElementById('formSuccess');
 
-    const data = await res.json();
-    if (data.success) {
-      form.style.display = 'none';
-      document.getElementById('formSuccess').classList.add('active');
-    } else {
-      throw new Error(data.message || 'Submission failed');
-    }
-  } catch(err) {
-    // Fallback to mailto
-    const subject = encodeURIComponent('Flow3 eye examination enquiry — ' + name);
-    const body = encodeURIComponent(
-      'New Flow3 eye examination enquiry:\n\n' +
-      'Name: ' + name + '\n' +
-      'Age: ' + age + '\n' +
-      'Email: ' + email + '\n' +
-      'Phone: ' + phone + '\n' +
-      'Prescription strength: ' + (diopter || 'Not specified') + '\n\n' +
-      'Please contact the patient to arrange an examination appointment.'
-    );
-    window.location.href = 'mailto:info@ksa.ee?subject=' + subject + '&body=' + body;
+      if (!form) return;
 
-    form.style.display = 'none';
-    document.getElementById('formSuccess').classList.add('active');
-  } finally {
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Send enquiry';
-  }
-});
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-// Smooth scroll for nav links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('mainNav').classList.remove('open');
-    }
-  });
-});
-</script>
+        var formData = new FormData(form);
+        var json = {};
+        formData.forEach(function(value, key) { json[key] = value; });
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(json)
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+          if (data.success) {
+            form.style.display = 'none';
+            success.classList.add('is-visible');
+          } else {
+            window.location.href = 'mailto:info@ksa.ee?subject=New%20contact%20-%20KSA%20Flow3&body=' + encodeURIComponent('Name: ' + json.name + '\nEmail: ' + json.email + '\nPhone: ' + (json.phone || '') + '\nAge: ' + (json.age || '') + '\nDioptres: ' + (json.diopter || ''));
+          }
+        })
+        .catch(function() {
+          window.location.href = 'mailto:info@ksa.ee?subject=New%20contact%20-%20KSA%20Flow3&body=' + encodeURIComponent('Name: ' + json.name + '\nEmail: ' + json.email + '\nPhone: ' + (json.phone || '') + '\nAge: ' + (json.age || '') + '\nDioptres: ' + (json.diopter || ''));
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
