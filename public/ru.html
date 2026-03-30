@@ -672,11 +672,11 @@ gtag("config", "AW-18030087653");
             form.style.display = 'none';
             success.classList.add('is-visible');
           } else {
-            window.location.href = 'mailto:info@ksa.ee?subject=Новый контакт — KSA Flow3&body=' + encodeURIComponent('Имя: ' + json.name + '\nЭ-почта: ' + json.email + '\nТелефон: ' + (json.phone || '') + '\nВозраст: ' + (json.age || '') + '\nДиоптрии: ' + (json.diopter || ''));
+            window.location.href = 'mailto:registreerumised@ksa.ee?subject=Новый контакт — KSA Flow3&body=' + encodeURIComponent('Имя: ' + json.name + '\nЭ-почта: ' + json.email + '\nТелефон: ' + (json.phone || '') + '\nВозраст: ' + (json.age || '') + '\nДиоптрии: ' + (json.diopter || ''));
           }
         })
         .catch(function() {
-          window.location.href = 'mailto:info@ksa.ee?subject=Новый контакт — KSA Flow3&body=' + encodeURIComponent('Имя: ' + json.name + '\nЭ-почта: ' + json.email + '\nТелефон: ' + (json.phone || '') + '\nВозраст: ' + (json.age || '') + '\nДиоптрии: ' + (json.diopter || ''));
+          window.location.href = 'mailto:registreerumised@ksa.ee?subject=Новый контакт — KSA Flow3&body=' + encodeURIComponent('Имя: ' + json.name + '\nЭ-почта: ' + json.email + '\nТелефон: ' + (json.phone || '') + '\nВозраст: ' + (json.age || '') + '\nДиоптрии: ' + (json.diopter || ''));
         });
       });
     })();

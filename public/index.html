@@ -676,11 +676,11 @@ ilma prillideta.</h1>
             success.classList.add('is-visible');
           } else {
             /* Fallback to mailto */
-            window.location.href = 'mailto:info@ksa.ee?subject=Uus%20kontakt%20-%20KSA%20Flow3&body=' + encodeURIComponent('Nimi: ' + json.name + '\nE-post: ' + json.email + '\nTelefon: ' + (json.phone || '') + '\nVanus: ' + (json.age || '') + '\nDioptrid: ' + (json.diopter || ''));
+            window.location.href = 'mailto:registreerumised@ksa.ee?subject=Uus%20kontakt%20-%20KSA%20Flow3&body=' + encodeURIComponent('Nimi: ' + json.name + '\nE-post: ' + json.email + '\nTelefon: ' + (json.phone || '') + '\nVanus: ' + (json.age || '') + '\nDioptrid: ' + (json.diopter || ''));
           }
         })
         .catch(function() {
-          window.location.href = 'mailto:info@ksa.ee?subject=Uus%20kontakt%20-%20KSA%20Flow3&body=' + encodeURIComponent('Nimi: ' + json.name + '\nE-post: ' + json.email + '\nTelefon: ' + (json.phone || '') + '\nVanus: ' + (json.age || '') + '\nDioptrid: ' + (json.diopter || ''));
+          window.location.href = 'mailto:registreerumised@ksa.ee?subject=Uus%20kontakt%20-%20KSA%20Flow3&body=' + encodeURIComponent('Nimi: ' + json.name + '\nE-post: ' + json.email + '\nTelefon: ' + (json.phone || '') + '\nVanus: ' + (json.age || '') + '\nDioptrid: ' + (json.diopter || ''));
         });
       });
     })();

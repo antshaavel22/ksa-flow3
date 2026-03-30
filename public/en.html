@@ -672,11 +672,11 @@ without glasses.</h1>
             form.style.display = 'none';
             success.classList.add('is-visible');
           } else {
-            window.location.href = 'mailto:info@ksa.ee?subject=New%20contact%20-%20KSA%20Flow3&body=' + encodeURIComponent('Name: ' + json.name + '\nEmail: ' + json.email + '\nPhone: ' + (json.phone || '') + '\nAge: ' + (json.age || '') + '\nDioptres: ' + (json.diopter || ''));
+            window.location.href = 'mailto:registreerumised@ksa.ee?subject=New%20contact%20-%20KSA%20Flow3&body=' + encodeURIComponent('Name: ' + json.name + '\nEmail: ' + json.email + '\nPhone: ' + (json.phone || '') + '\nAge: ' + (json.age || '') + '\nDioptres: ' + (json.diopter || ''));
           }
         })
         .catch(function() {
-          window.location.href = 'mailto:info@ksa.ee?subject=New%20contact%20-%20KSA%20Flow3&body=' + encodeURIComponent('Name: ' + json.name + '\nEmail: ' + json.email + '\nPhone: ' + (json.phone || '') + '\nAge: ' + (json.age || '') + '\nDioptres: ' + (json.diopter || ''));
+          window.location.href = 'mailto:registreerumised@ksa.ee?subject=New%20contact%20-%20KSA%20Flow3&body=' + encodeURIComponent('Name: ' + json.name + '\nEmail: ' + json.email + '\nPhone: ' + (json.phone || '') + '\nAge: ' + (json.age || '') + '\nDioptres: ' + (json.diopter || ''));
         });
       });
     })();
