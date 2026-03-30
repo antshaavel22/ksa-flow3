@@ -87,26 +87,22 @@
 
 .logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   line-height: 1;
 }
 
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
 .logo__main {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: var(--color-accent);
-  letter-spacing: -0.02em;
-  line-height: 1;
+  display: none;
 }
 
 .logo__sub {
-  font-size: 0.55rem;
-  font-weight: 500;
-  color: var(--color-text);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-top: 1px;
+  display: none;
 }
 
 .header__right {
@@ -955,12 +951,9 @@
   margin-bottom: var(--space-12);
 }
 
-.footer__brand .logo__main {
-  color: var(--color-accent);
-}
-
-.footer__brand .logo__sub {
-  color: rgba(255, 255, 255, 0.5);
+.footer__brand .logo img {
+  height: 36px;
+  filter: brightness(0) invert(1);
 }
 
 .footer__brand p {
